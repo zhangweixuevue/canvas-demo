@@ -61,7 +61,7 @@ thick.onclick = function(){
   lineWidth = 10
 }
 
-/******/
+
 
 function autoSetCanvasSize(canvas) {
   setCanvasSize()
@@ -100,9 +100,9 @@ function listenToUser(canvas) {
     x: undefined,
     y: undefined
   }
-  // 特性检测
+
   if(document.body.ontouchstart !== undefined){
-    // 触屏设备 
+
     canvas.ontouchstart = function(aaa){
       var x = aaa.touches[0].clientX
       var y = aaa.touches[0].clientY
